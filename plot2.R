@@ -32,4 +32,4 @@ hpc_february %>%
 
 
 ggsave(plot = plotII, filename = "plot2.png", device = "png", units = "cm",
-       width = 12.7, height = 12.7)
+       width = 12.7, height = 12.7, dpi = 150)

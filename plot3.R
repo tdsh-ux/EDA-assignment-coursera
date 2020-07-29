@@ -36,5 +36,4 @@ hpc_february %>%
         legend.position = c(.85, 0.9)) -> plotIII
 
 ggsave(plot = plotIII, filename = "plot3.png", device = "png", units = "cm",
-       width = 12.7, height = 12.7)
-
+       width = 12.7, height = 12.7, dpi = 150)

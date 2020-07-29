@@ -26,7 +26,7 @@ hpc_february %>%
   scale_x_continuous(name = "Global Active Power (kilowatts)") -> plotI
 
 ggsave(plot = plotI, filename = "plot1.png", device = "png", unit = "cm",
-       width = 12.7, height = 12.7)
+       width = 12.7, height = 12.7, dpi = 150)
 
 
 
