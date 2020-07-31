@@ -19,6 +19,5 @@ dist(df)   # gives the distance matrix
 distxy <- dist(df)
 hClustering <- hclust(distxy)
 plot(hClustering)
-
 heatmap(as.matrix(df))
 # organize the table with the hierarclical clustering algorithm.
