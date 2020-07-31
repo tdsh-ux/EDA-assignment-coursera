@@ -1,11 +1,11 @@
 # Hierarchical clustering
 library(tidyverse)
-
 set.seed(1234)
 par(mar = c(5,5,5,5))
-
 x <- rnorm(12, mean = rep(1:3, each = 4), sd = .2)
+
 y <- rnorm(12, mean = rep(c(1, 2, 1), each = 4), sd = .2)
+
 plot(x, y, col = "blue", pch = 19, cex = 2)
 
 text(x + .05, y +.05, labels = as.character(1:12))
@@ -23,4 +23,5 @@ hClustering <- hclust(distxy)
 plot(hClustering)
 
 heatmap(as.matrix(df))
+
 # organize the table with the hierarclical clustering algorithm.
